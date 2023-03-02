@@ -1,0 +1,28 @@
+.instrument__companies-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+}
+
+.instrument__companies-container img {
+  width: 300px;
+}
+
+
+
+@media screen and (max-width: 1050px){
+  .instrument__companies-container img {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .instrument__companies-container {
+    margin: 1rem;
+  }
+  .instrument__companies-container img {
+    width: 150px;
+  }
+}

@@ -1,0 +1,25 @@
+.instrument__intro {
+  margin: 10rem 5rem;
+
+}
+
+.instrument__intro-video {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1050px) {
+  .instrument__intro {
+    margin: 8rem 2rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .instrument__intro {
+    margin: 6rem 0;
+  }
+  .instrument__intro-video {
+    border-radius: 0%;
+  }
+}
+

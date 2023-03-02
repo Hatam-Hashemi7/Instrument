@@ -1,0 +1,105 @@
+.instrument__footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 7rem;
+}
+
+.instrument__footer-links {
+  display: flex;
+  flex-direction: row;
+  margin: 3rem;
+}
+
+.instrument__footer-links-sec1,
+.instrument__footer-links-sec2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.instrument__footer-links-sec1 a,
+.instrument__footer-links-sec2 a{
+  font-family:  Monument Grotesk Semi Mono,Monaco,Courier,monospace;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--color-white);
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  transition: 0.5s;
+}
+
+.instrument__footer-links-sec1 a{
+  margin-right: 11rem;
+}
+
+.instrument__footer-links-sec1 a:hover,
+.instrument__footer-links-sec2 a:hover {
+  color: var(--color-hover);
+}
+
+.instrument__footer-medias {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  margin: 2rem 3rem;
+}
+
+.instrument__footer-medias-btn {
+  display: flex;
+  align-items: center;  
+  text-align: center;
+  gap: 1rem;
+
+  font-family: var(--font-family);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--color-white);
+
+  border: 1px solid #333;
+  border-radius: 10rem;
+  cursor: pointer;
+  background-color: transparent;
+
+  margin-right: 2.5rem;
+  padding: 1rem 3rem;
+  transition: .5s;
+}
+
+.instrument__footer-medias-btn:hover {
+  opacity: 70%;
+}
+
+.instrument__footer-medias-icon {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+@media screen and (max-width: 1050px){
+  .instrument__footer-medias {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .instrument__footer {
+    flex-direction: column;
+  }
+  .instrument__footer-medias {
+    flex-direction: row;
+  }
+  .instrument__footer-medias-btn {
+    margin: 1rem;
+  }
+}
