@@ -1,17 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import Article from '../../components/article/Article'
 import dropbox from '../../assets/dropbox.webp'
 import emas from '../../assets/emas.webp'
 import { BsArrowRight } from 'react-icons/bs'
 import './carrers.css'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Carrers = () => {
+
+  useEffect(() => {
+    Aos.init({ duration: 400 })
+  }, [])
+
   return (
     <div id='carrers' className='instrument__carrers'>
       <div className='instrument__carrers-explore'>
-        <h2 className='instrument__carrers-heading'>Explore some of our most <br />recent work</h2>
-        <button className='instrument__btn'>Our work {<BsArrowRight size={12}/>}</button>
+        <h2 className='instrument__carrers-heading' data-aos="fade">Explore some of our most <br />recent work</h2>
+        <button className='instrument__btn' data-aos="fade">Our work {<BsArrowRight size={12}/>}</button>
       </div>
       <div className='instrument__carrers-article'>
         <Article imgUrl={emas} title='Emas Institute' text="Ray and Charles Emas laid the foundation for modern design and created work that has transcended time. With an aspiration to bring the Eameses' timeless methodologies to a modern audience,v the Emas Institute enlisted instrument to co-create a digital platform to unveil their vast collection to the world." />
